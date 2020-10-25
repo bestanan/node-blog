@@ -12,10 +12,10 @@ function exec(sql) {
     const promise = new Promise((resolve, reject) => {
         con.query(sql, (err, result) => {
             if(err) {
-                resolve(err)
+                reject(err)
                 return
             }
-            reject(result)
+            resolve(result)
         })
     })
     return promise
