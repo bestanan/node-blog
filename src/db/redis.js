@@ -8,7 +8,7 @@ redisClient.on('error', err => {
 })
 
 function set(key, val) {
-    if(typeof val === object) {
+    if(typeof val === 'object') {
         val = JSON.stringify(val)
     }
     redisClient.set(key, val, redis.print)
