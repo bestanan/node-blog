@@ -19,7 +19,8 @@
 * 登录页面：/api/user/login （post）
 
 ### 数据存储
-MySQL
+* MySQL
+* Redis（用来存 session 数据）
 
 ### 启动方式
 * 开发环境：nodemon
